@@ -1,0 +1,305 @@
+<!-- GeoChart generated in R 3.4.1 by googleVis 0.6.2 package -->
+<!-- Mon Apr 30 13:42:34 2018 -->
+
+
+<!-- jsHeader -->
+<script type="text/javascript">
+
+
+// jsData 
+function gvisDataGeoChartID6cb6f61bd5d () {
+var data = new google.visualization.DataTable();
+var datajson =
+[
+ [
+"Australia",
+129433067
+],
+[
+"Austria",
+108460274.3
+],
+[
+"Barbados",
+47633475.19
+],
+[
+"Belgium",
+93117408.87
+],
+[
+"Bulgaria",
+103642806
+],
+[
+"Canada",
+276562669.4
+],
+[
+"Channel Islands",
+8410206
+],
+[
+"China - Hong Kong",
+28563635.51
+],
+[
+"Croatia",
+231527870.8
+],
+[
+"Cyprus EU",
+208048029.3
+],
+[
+"Cyprus Non EU",
+13107338.71
+],
+[
+"Czech Republic",
+57144767.38
+],
+[
+"Denmark",
+65405390.54
+],
+[
+"Egypt",
+9229690.209
+],
+[
+"Estonia",
+5170803.538
+],
+[
+"Finland",
+13556449.16
+],
+[
+"France",
+1443042232
+],
+[
+"Germany",
+327819058.9
+],
+[
+"Gibraltar",
+23699416.62
+],
+[
+"Greece",
+1057426247
+],
+[
+"Hungary",
+112460259.7
+],
+[
+"Iceland",
+41077318.45
+],
+[
+"India",
+164543126.9
+],
+[
+"Irish Republic",
+348888830
+],
+[
+"Israel",
+16585567.96
+],
+[
+"Italy",
+1091769367
+],
+[
+"Jamaica",
+55851651.41
+],
+[
+"Japan",
+89703307.77
+],
+[
+"Latvia",
+38518175.94
+],
+[
+"Lithuania",
+54729802.74
+],
+[
+"Luxembourg",
+3888633.59
+],
+[
+"Malta",
+178201530.1
+],
+[
+"Mexico",
+186546149
+],
+[
+"Netherlands",
+269397212.1
+],
+[
+"New Zealand",
+47360297.46
+],
+[
+"Norway",
+62822591.71
+],
+[
+"Pakistan",
+95256545.99
+],
+[
+"Poland",
+286107949.6
+],
+[
+"Portugal",
+695649151.3
+],
+[
+"Romania",
+152765690.7
+],
+[
+"Russia",
+29251432.8
+],
+[
+"Slovakia",
+22602081.3
+],
+[
+"Slovenia",
+14802200.66
+],
+[
+"South Africa",
+54876363.72
+],
+[
+"Spain",
+3454012196
+],
+[
+"Sri Lanka",
+50612237.76
+],
+[
+"Sweden",
+60675964.43
+],
+[
+"Switzerland",
+118313573.9
+],
+[
+"Thailand",
+161845812.6
+],
+[
+"Tunisia",
+8580995.659
+],
+[
+"Turkey",
+277873401.2
+],
+[
+"United Arab Emirates",
+190225746
+],
+[
+"USA",
+1435620888
+] 
+];
+data.addColumn('string','country');
+data.addColumn('number','spend');
+data.addRows(datajson);
+return(data);
+}
+
+
+// jsDrawChart
+function drawChartGeoChartID6cb6f61bd5d() {
+var data = gvisDataGeoChartID6cb6f61bd5d();
+var options = {};
+options["width"] = 556;
+options["height"] = 347;
+options["region"] = 150;
+
+
+    var chart = new google.visualization.GeoChart(
+    document.getElementById('GeoChartID6cb6f61bd5d')
+    );
+    chart.draw(data,options);
+    
+
+}
+  
+
+
+// jsDisplayChart
+(function() {
+var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+var chartid = "geochart";
+  
+// Manually see if chartid is in pkgs (not all browsers support Array.indexOf)
+var i, newPackage = true;
+for (i = 0; newPackage && i < pkgs.length; i++) {
+if (pkgs[i] === chartid)
+newPackage = false;
+}
+if (newPackage)
+  pkgs.push(chartid);
+  
+// Add the drawChart function to the global list of callbacks
+callbacks.push(drawChartGeoChartID6cb6f61bd5d);
+})();
+function displayChartGeoChartID6cb6f61bd5d() {
+  var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+  var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+  window.clearTimeout(window.__gvisLoad);
+  // The timeout is set to 100 because otherwise the container div we are
+  // targeting might not be part of the document yet
+  window.__gvisLoad = setTimeout(function() {
+  var pkgCount = pkgs.length;
+  google.load("visualization", "1", { packages:pkgs, callback: function() {
+  if (pkgCount != pkgs.length) {
+  // Race condition where another setTimeout call snuck in after us; if
+  // that call added a package, we must not shift its callback
+  return;
+}
+while (callbacks.length > 0)
+callbacks.shift()();
+} });
+}, 100);
+}
+
+
+// jsFooter
+</script>
+
+
+<!-- jsChart -->  
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartGeoChartID6cb6f61bd5d"></script>
+
+
+<!-- divChart -->
+  
+<div id="GeoChartID6cb6f61bd5d" 
+  style="width: 556; height: 347;">
+</div>
+
