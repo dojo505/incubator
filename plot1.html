@@ -1,0 +1,304 @@
+<!-- GeoChart generated in R 3.4.1 by googleVis 0.6.2 package -->
+<!-- Mon Apr 30 11:55:00 2018 -->
+
+
+<!-- jsHeader -->
+<script type="text/javascript">
+
+
+// jsData 
+function gvisDataGeoChartID6cb6d500c02 () {
+var data = new google.visualization.DataTable();
+var datajson =
+[
+ [
+"Australia",
+259444226.6
+],
+[
+"Austria",
+282662438.2
+],
+[
+"Barbados",
+54150135.11
+],
+[
+"Belgium",
+78937378.37
+],
+[
+"Bulgaria",
+37312151.16
+],
+[
+"Canada",
+77220059.95
+],
+[
+"Channel Islands",
+2997852
+],
+[
+"China - Hong Kong",
+34688354.49
+],
+[
+"Croatia",
+2724500.637
+],
+[
+"Cyprus EU",
+46331102.45
+],
+[
+"Cyprus Non EU",
+27218006.82
+],
+[
+"Czech Republic",
+46049590.86
+],
+[
+"Denmark",
+57491823.87
+],
+[
+"Egypt",
+15757772.96
+],
+[
+"Estonia",
+3579708.453
+],
+[
+"Finland",
+28929452.9
+],
+[
+"France",
+714146565.9
+],
+[
+"Germany",
+187961763
+],
+[
+"Gibraltar",
+5741381.488
+],
+[
+"Greece",
+20030328.48
+],
+[
+"Hungary",
+43146251.83
+],
+[
+"Iceland",
+67701980.69
+],
+[
+"India",
+283551709.9
+],
+[
+"Irish Republic",
+209961129.1
+],
+[
+"Israel",
+16638440.1
+],
+[
+"Italy",
+324016205.6
+],
+[
+"Jamaica",
+69832207.01
+],
+[
+"Japan",
+30112645.62
+],
+[
+"Latvia",
+14123530.48
+],
+[
+"Lithuania",
+24041774.86
+],
+[
+"Luxembourg",
+5610582.278
+],
+[
+"Malta",
+41120211.07
+],
+[
+"Mexico",
+85606374.71
+],
+[
+"Netherlands",
+214202185.5
+],
+[
+"New Zealand",
+94836272.32
+],
+[
+"Norway",
+32505393.32
+],
+[
+"Pakistan",
+77377756.47
+],
+[
+"Poland",
+144965530.9
+],
+[
+"Portugal",
+167015101.7
+],
+[
+"Romania",
+100838897.9
+],
+[
+"Russia",
+18182141.03
+],
+[
+"Slovakia",
+14401563.33
+],
+[
+"Slovenia",
+4809444.918
+],
+[
+"South Africa",
+139945799.3
+],
+[
+"Spain",
+905340774.6
+],
+[
+"Sri Lanka",
+38148137.09
+],
+[
+"Sweden",
+45429405.87
+],
+[
+"Switzerland",
+214378588.3
+],
+[
+"Thailand",
+241758467.7
+],
+[
+"Tunisia",
+3244762.176
+],
+[
+"Turkey",
+59742982.14
+],
+[
+"United Arab Emirates",
+230407317.3
+],
+[
+"USA",
+730194612.3
+] 
+];
+data.addColumn('string','country');
+data.addColumn('number','spend');
+data.addRows(datajson);
+return(data);
+}
+
+
+// jsDrawChart
+function drawChartGeoChartID6cb6d500c02() {
+var data = gvisDataGeoChartID6cb6d500c02();
+var options = {};
+options["width"] = 556;
+options["height"] = 347;
+options["region"] = 150;
+
+
+    var chart = new google.visualization.GeoChart(
+    document.getElementById('GeoChartID6cb6d500c02')
+    );
+    chart.draw(data,options);
+    
+
+}
+  
+
+
+// jsDisplayChart
+(function() {
+var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+var chartid = "geochart";
+  
+// Manually see if chartid is in pkgs (not all browsers support Array.indexOf)
+var i, newPackage = true;
+for (i = 0; newPackage && i < pkgs.length; i++) {
+if (pkgs[i] === chartid)
+newPackage = false;
+}
+if (newPackage)
+  pkgs.push(chartid);
+  
+// Add the drawChart function to the global list of callbacks
+callbacks.push(drawChartGeoChartID6cb6d500c02);
+})();
+function displayChartGeoChartID6cb6d500c02() {
+  var pkgs = window.__gvisPackages = window.__gvisPackages || [];
+  var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
+  window.clearTimeout(window.__gvisLoad);
+  // The timeout is set to 100 because otherwise the container div we are
+  // targeting might not be part of the document yet
+  window.__gvisLoad = setTimeout(function() {
+  var pkgCount = pkgs.length;
+  google.load("visualization", "1", { packages:pkgs, callback: function() {
+  if (pkgCount != pkgs.length) {
+  // Race condition where another setTimeout call snuck in after us; if
+  // that call added a package, we must not shift its callback
+  return;
+}
+while (callbacks.length > 0)
+callbacks.shift()();
+} });
+}, 100);
+}
+
+
+// jsFooter
+</script>
+
+
+<!-- jsChart -->  
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartGeoChartID6cb6d500c02"></script>
+
+
+<!-- divChart -->
+  
+<div id="GeoChartID6cb6d500c02" 
+  style="width: 556; height: 347;">
+</div>
